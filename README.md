@@ -9,4 +9,5 @@ shrtcode,  9qrde, shinylink = short.shorten("YOUR URL")
 ```
 ## API Reference
 Shrtcode API: https://shrtco.de/docs/
+
 No authentication needed for this API and module
