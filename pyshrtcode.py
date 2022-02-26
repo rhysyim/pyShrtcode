@@ -1,11 +1,24 @@
-class short:
+class shorten:
     import requests
 
     def shorten(url):
-        response = short.requests.get('https://api.shrtco.de/v2/shorten?url=' + url).json()
-        
-        shortLink1 = response["result"]["full_short_link"]
-        shortLink2 = response["result"]["full_short_link2"]
-        shortLink3 = response["result"]["full_short_link3"]
+        response = shorten.requests.get('https://api.shrtco.de/v2/shorten?url=' + str(url)).json()
+        return response
 
-        return shortLink1, shortLink2, shortLink3
+    def shrtcode(url):
+        response = shorten.shorten(url)
+        shortLink = response["result"]["full_short_link"]
+
+        return shortLink
+
+    def qrde(url):
+        response = shorten.shorten(url)
+        shortLink = response["result"]["full_short_link2"]
+
+        return shortLink
+
+    def shinyLink(url):
+        response = shorten.shorten(url)
+        shortLink = response["result"]["full_short_link3"]
+
+        return shortLink
