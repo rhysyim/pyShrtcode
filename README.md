@@ -3,9 +3,11 @@ A python module shortening URL with Shrtcode API
 ## Usage
 ```
 #Import module
-from pyshrtcode import short
+from pyshrtcode import shorten
 
-shrtcode,  9qrde, shinylink = short.shorten("YOUR URL")
+shrtcode = shorten.shrtcode("YOUR URL")
+qrde = shorten.qrde("YOUR URL")
+shinyLink = shorten.shinyLink("YOUR URL")
 ```
 ## API Reference
 Shrtcode API: https://shrtco.de/docs/
