@@ -12,4 +12,4 @@ shinyLink = shorten.shinyLink("YOUR URL")
 ## API Reference
 Shrtcode API: https://shrtco.de/docs/
 
-No authentication needed for this API and module
+No authentication needed for this API
